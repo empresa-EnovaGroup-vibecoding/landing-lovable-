@@ -20,8 +20,8 @@ const features = [
 ];
 
 const SolutionSection = () => (
-  <section className="relative py-20 md:py-28">
-    <div className="container mx-auto">
+  <section className="relative py-20 md:py-28 particles-bg">
+    <div className="container relative z-10 mx-auto">
       <AnimatedSection>
         <h2 className="mb-4 text-center text-3xl font-bold md:text-4xl">
           Conoce Lovable: Tu <span className="gradient-text">Programador Personal</span> con IA
@@ -34,9 +34,9 @@ const SolutionSection = () => (
       <div className="grid gap-8 md:grid-cols-3">
         {features.map((f, i) => (
           <AnimatedSection key={i} delay={i * 0.15}>
-            <div className="flex flex-col items-center rounded-xl border border-border bg-card p-8 text-center transition-all hover:border-primary/40">
-              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl gradient-bg">
-                <f.icon className="h-8 w-8 text-foreground" />
+            <div className="flex flex-col items-center rounded-xl glass-card p-8 text-center transition-all hover:border-primary/40 hover:glow-shadow-sm">
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl gradient-bg shadow-lg">
+                <f.icon className="h-8 w-8 text-primary-foreground" />
               </div>
               <h3 className="mb-3 text-xl font-bold">{f.title}</h3>
               <p className="text-muted-foreground">{f.desc}</p>
