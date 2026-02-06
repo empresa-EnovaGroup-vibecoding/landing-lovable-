@@ -7,6 +7,7 @@ const videoTestimonials = [
     name: "Felipe V.",
     country: "🇨🇴",
     description: "Creó su proyecto desde cero sin experiencia técnica",
+    vertical: true,
     videoUrl:
       "https://res.cloudinary.com/dpmt0pzhb/video/upload/v1770421445/testimonio_estabilizacion_sin_muletillas_Felipe_Ve_au2qev.mp4",
   },
@@ -14,6 +15,7 @@ const videoTestimonials = [
     name: "Esaul M.",
     country: "🇲🇽",
     description: "Construyó su herramienta de ventas con Lovable",
+    vertical: false,
     videoUrl:
       "https://res.cloudinary.com/dpmt0pzhb/video/upload/v1770421437/Recorte_de_VIDEO_ESAUL_1_MIN_fnnagr.mp4",
   },
@@ -21,6 +23,7 @@ const videoTestimonials = [
     name: "Yobran T.",
     country: "🇪🇨",
     description: "Lanzó su plataforma de cursos online",
+    vertical: false,
     videoUrl:
       "https://res.cloudinary.com/dpmt0pzhb/video/upload/v1770421437/yobran_plataforma_de_cursos_umomxl.mp4",
   },
@@ -28,6 +31,7 @@ const videoTestimonials = [
     name: "Jhon R.",
     country: "🇨🇴",
     description: "Automatizó su negocio con una app personalizada",
+    vertical: true,
     videoUrl:
       "https://res.cloudinary.com/dpmt0pzhb/video/upload/v1770421403/Cliente_Jhon_v3jpj1.mp4",
   },
@@ -56,7 +60,7 @@ const VideoCard = ({
     <div className="group flex h-full flex-col rounded-xl glass-card p-3 transition-all hover:border-primary/60 hover:glow-shadow-sm">
       {/* Video container */}
       <div className="relative mb-4 w-full overflow-hidden rounded-xl bg-black"
-           style={{ aspectRatio: "9/16" }}>
+           style={{ aspectRatio: testimonial.vertical ? "9/16" : "16/9" }}>
         <video
           ref={videoRef}
           src={testimonial.videoUrl}
@@ -66,7 +70,7 @@ const VideoCard = ({
           onPause={handlePause}
           onEnded={() => setIsPlaying(false)}
           onPlay={() => setIsPlaying(true)}
-          className="absolute inset-0 h-full w-full rounded-xl object-cover"
+          className="absolute inset-0 h-full w-full rounded-xl object-contain"
         />
 
         {/* Play overlay */}
