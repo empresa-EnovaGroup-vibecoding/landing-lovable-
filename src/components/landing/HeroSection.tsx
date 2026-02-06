@@ -1,19 +1,22 @@
 import { useState } from "react";
 import AnimatedSection from "./AnimatedSection";
+import appDashboard from "@/assets/app-dashboard.jpg";
+import appEcommerce from "@/assets/app-ecommerce.jpg";
+import appProject from "@/assets/app-project.jpg";
+import appSocial from "@/assets/app-social.jpg";
+import appCrypto from "@/assets/app-crypto.jpg";
+import appRestaurant from "@/assets/app-restaurant.jpg";
+import appCrm from "@/assets/app-crm.jpg";
+import appFitness from "@/assets/app-fitness.jpg";
+import appLanding from "@/assets/app-landing.jpg";
+import appBooking from "@/assets/app-booking.jpg";
+import appChat from "@/assets/app-chat.jpg";
+import appAdmin from "@/assets/app-admin.jpg";
 
 const appScreenshots = [
-  { title: "Dashboard Analytics", category: "Internal Tools" },
-  { title: "E-Commerce Store", category: "Consumer App" },
-  { title: "Project Manager", category: "B2B App" },
-  { title: "Social Platform", category: "Personal" },
-  { title: "Crypto Trading", category: "Website" },
-  { title: "Restaurant App", category: "Consumer App" },
-  { title: "CRM System", category: "B2B App" },
-  { title: "Fitness Tracker", category: "Personal" },
-  { title: "Landing Page", category: "Website" },
-  { title: "Booking System", category: "Prototype" },
-  { title: "Chat Application", category: "Consumer App" },
-  { title: "Admin Panel", category: "Internal Tools" },
+  appDashboard, appEcommerce, appProject, appSocial,
+  appCrypto, appRestaurant, appCrm, appFitness,
+  appLanding, appBooking, appChat, appAdmin,
 ];
 
 const HeroSection = () => {
@@ -34,26 +37,21 @@ const HeroSection = () => {
 
       {/* App screenshots mosaic background */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 p-4 opacity-[0.12]" style={{ transform: "rotate(-5deg) scale(1.2)" }}>
-          {appScreenshots.map((app, i) => (
+        <div className="absolute inset-0 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 p-4 opacity-[0.15]" style={{ transform: "rotate(-5deg) scale(1.2)" }}>
+          {appScreenshots.map((src, i) => (
             <div
               key={i}
-              className="rounded-lg border border-border/30 bg-card/50 p-3 h-32 md:h-40 flex flex-col justify-between"
+              className="rounded-lg overflow-hidden border border-border/20 h-32 md:h-40"
               style={{ 
                 animationDelay: `${i * 0.3}s`,
-                filter: "blur(0.5px)"
               }}
             >
-              <div className="h-2 w-16 rounded bg-muted-foreground/30" />
-              <div className="space-y-1.5">
-                <div className="h-1.5 w-full rounded bg-muted-foreground/20" />
-                <div className="h-1.5 w-3/4 rounded bg-muted-foreground/15" />
-                <div className="h-1.5 w-1/2 rounded bg-muted-foreground/10" />
-              </div>
-              <div className="flex gap-1">
-                <div className="h-4 w-4 rounded bg-primary/20" />
-                <div className="h-4 w-4 rounded bg-secondary/20" />
-              </div>
+              <img
+                src={src}
+                alt=""
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
           ))}
         </div>
