@@ -25,7 +25,7 @@ const PackSection = () => (
     <div className="container relative z-10 mx-auto">
       <AnimatedSection>
         <h2 className="mb-14 text-center text-3xl font-bold md:text-4xl">
-          Todo lo que incluye tu <span className="gradient-text">Pack EmprendeDigital</span>
+          Todo lo que incluye tu <span className="gradient-text">Pack Lanza Tu App HOY</span>
         </h2>
       </AnimatedSection>
 
