@@ -1,4 +1,4 @@
-import { Check, X, Minus } from "lucide-react";
+import { Check, X } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 const rows = [
@@ -51,8 +51,8 @@ const CellValue = ({ value }: { value: string | boolean }) => {
 };
 
 const ComparisonTable = () => (
-  <section className="relative py-20 md:py-28">
-    <div className="container mx-auto">
+  <section className="relative py-20 md:py-28 particles-bg">
+    <div className="container relative z-10 mx-auto">
       <AnimatedSection>
         <h2 className="mb-14 text-center text-3xl font-bold md:text-4xl">
           ¿Por qué Lovable y <span className="gradient-text">no otra herramienta</span>?
@@ -60,15 +60,19 @@ const ComparisonTable = () => (
       </AnimatedSection>
 
       <AnimatedSection delay={0.1}>
-        <div className="overflow-x-auto rounded-xl border border-border">
+        <div className="overflow-x-auto rounded-xl glass-card-strong">
           <table className="w-full min-w-[640px] text-center">
             <thead>
-              <tr className="border-b border-border bg-card">
+              <tr className="border-b border-border/50">
                 <th className="p-4 text-left text-sm font-medium text-muted-foreground">
                   Característica
                 </th>
                 <th className="relative p-4 text-sm font-bold">
-                  <div className="gradient-border absolute inset-0 rounded-t-lg" />
+                  <div className="absolute inset-0 rounded-t-lg" style={{ 
+                    border: "2px solid transparent",
+                    borderImage: "linear-gradient(135deg, #FF6B35, #FFA62B) 1",
+                    borderBottom: "none"
+                  }} />
                   <span className="relative gradient-text font-bold">Lovable Pro<br/>(con nosotros)</span>
                 </th>
                 <th className="p-4 text-sm font-medium text-muted-foreground">Adalo</th>
@@ -78,12 +82,15 @@ const ComparisonTable = () => (
             </thead>
             <tbody>
               {rows.map((row, i) => (
-                <tr key={i} className="border-b border-border last:border-0">
+                <tr key={i} className="border-b border-border/30 last:border-0">
                   <td className="p-4 text-left text-sm font-medium text-muted-foreground">
                     {row.feature}
                   </td>
-                  <td className="relative p-4">
-                    <div className="gradient-border absolute inset-0" />
+                  <td className="relative p-4" style={{ 
+                    borderLeft: "2px solid #FF6B35",
+                    borderRight: "2px solid #FFA62B",
+                    background: "rgba(255,107,53,0.05)"
+                  }}>
                     <span className="relative font-semibold">
                       <CellValue value={row.lovable} />
                     </span>

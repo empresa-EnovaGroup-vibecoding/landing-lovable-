@@ -1,10 +1,10 @@
 import AnimatedSection from "./AnimatedSection";
 
 const CTASection = () => (
-  <section className="relative overflow-hidden py-20 md:py-28">
+  <section className="relative overflow-hidden py-20 md:py-28 particles-bg">
     {/* Intense gradient background */}
     <div className="absolute inset-0 opacity-30" style={{ background: "var(--gradient-radial-glow)" }} />
-    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
+    <div className="absolute inset-0" style={{ background: "linear-gradient(180deg, transparent, rgba(255,107,53,0.05), transparent)" }} />
 
     <div className="container relative z-10 mx-auto text-center">
       <AnimatedSection>
@@ -22,7 +22,7 @@ const CTASection = () => (
           <span className="gradient-text">$5 USD</span>{" "}
           <span className="text-lg text-muted-foreground">| $100 MXN | $19.000 COP</span>
         </p>
-        <span className="mb-8 inline-block rounded-full gradient-bg px-5 py-2 text-sm font-semibold text-foreground">
+        <span className="mb-8 inline-block rounded-full cta-button px-5 py-2 text-sm">
           PAGO ÚNICO
         </span>
       </AnimatedSection>
@@ -33,9 +33,9 @@ const CTASection = () => (
             href="https://wa.me/584264399792?text=Hola%20quiero%20mi%20acceso%20a%20Lovable%20Pro"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block rounded-lg gradient-bg px-10 py-4 text-lg font-semibold text-foreground transition-all hover:shadow-lg glow-shadow animate-pulse-glow"
+            className="inline-block rounded-lg cta-button px-10 py-4 text-lg animate-pulse-glow"
           >
-            Quiero empezar ahora →
+            QUIERO EMPEZAR AHORA →
           </a>
           <p className="mt-6 text-sm text-muted-foreground">
             Esta página fue creada con Lovable en minutos. Tú también puedes hacerlo. ✨

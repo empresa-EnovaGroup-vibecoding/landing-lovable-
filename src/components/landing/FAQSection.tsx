@@ -38,8 +38,8 @@ const faqs = [
 ];
 
 const FAQSection = () => (
-  <section className="relative py-20 md:py-28 surface-elevated">
-    <div className="container mx-auto max-w-3xl">
+  <section className="relative py-20 md:py-28 surface-elevated particles-bg">
+    <div className="container relative z-10 mx-auto max-w-3xl">
       <AnimatedSection>
         <h2 className="mb-14 text-center text-3xl font-bold md:text-4xl">
           Preguntas <span className="gradient-text">frecuentes</span>
@@ -52,7 +52,7 @@ const FAQSection = () => (
             <AccordionItem
               key={i}
               value={`item-${i}`}
-              className="rounded-xl border border-border bg-card px-6"
+              className="rounded-xl glass-card px-6"
             >
               <AccordionTrigger className="text-left text-base font-semibold hover:no-underline">
                 {faq.q}

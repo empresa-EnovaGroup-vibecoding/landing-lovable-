@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { Star, Quote } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 const testimonials = [
@@ -20,8 +20,8 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => (
-  <section className="relative py-20 md:py-28 surface-elevated">
-    <div className="container mx-auto">
+  <section className="relative py-20 md:py-28 surface-elevated particles-bg">
+    <div className="container relative z-10 mx-auto">
       <AnimatedSection>
         <h2 className="mb-4 text-center text-3xl font-bold md:text-4xl">
           Mira lo que nuestros clientes están{" "}
@@ -35,7 +35,10 @@ const TestimonialsSection = () => (
       <div className="grid gap-8 md:grid-cols-3">
         {testimonials.map((t, i) => (
           <AnimatedSection key={i} delay={i * 0.15}>
-            <div className="flex h-full flex-col rounded-xl border border-border bg-card p-6">
+            <div className="flex h-full flex-col rounded-xl glass-card p-6 transition-all hover:glow-shadow-sm">
+              {/* Decorative quote */}
+              <Quote className="mb-3 h-8 w-8 text-primary/30" />
+              
               <div className="mb-4 flex gap-1">
                 {[...Array(5)].map((_, j) => (
                   <Star key={j} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
@@ -45,7 +48,13 @@ const TestimonialsSection = () => (
                 "{t.text}"
               </p>
               <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full gradient-bg text-sm font-bold text-foreground">
+                <div 
+                  className="flex h-12 w-12 items-center justify-center rounded-full text-sm font-bold text-primary-foreground shadow-lg"
+                  style={{ 
+                    background: "linear-gradient(135deg, #FF6B35, #FFA62B)",
+                    boxShadow: "0 0 15px rgba(255,107,53,0.3)"
+                  }}
+                >
                   {t.name.charAt(0)}
                 </div>
                 <div>
