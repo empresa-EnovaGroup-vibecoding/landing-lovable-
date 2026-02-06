@@ -1,21 +1,23 @@
-import { Star, Quote } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
-const testimonials = [
+const videoTestimonials = [
   {
     name: "María G.",
     country: "🇲🇽",
-    text: "Nunca había programado en mi vida. En un fin de semana creé la app para mi restaurante con menú y pedidos. Increíble.",
+    description: "Creó la app de su restaurante en un fin de semana",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   },
   {
     name: "Carlos R.",
     country: "🇨🇴",
-    text: "Llevaba meses pagando Adalo $45/mes. Me pasé a Lovable y en 3 días tenía algo mejor por $5. No tiene comparación.",
+    description: "Migró de Adalo a Lovable y ahorró $40/mes",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   },
   {
     name: "Andrea M.",
     country: "🇪🇨",
-    text: "El taller me enseñó paso a paso. Ahora tengo mi tienda online funcionando y recibiendo pedidos.",
+    description: "Lanzó su tienda online recibiendo pedidos",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   },
 ];
 
@@ -33,26 +35,28 @@ const TestimonialsSection = () => (
       </AnimatedSection>
 
       <div className="grid gap-8 md:grid-cols-3">
-        {testimonials.map((t, i) => (
+        {videoTestimonials.map((t, i) => (
           <AnimatedSection key={i} delay={i * 0.15}>
-            <div className="flex h-full flex-col rounded-xl glass-card p-6 transition-all hover:glow-shadow-sm">
-              {/* Decorative quote */}
-              <Quote className="mb-3 h-8 w-8 text-primary/30" />
-              
-              <div className="mb-4 flex gap-1">
-                {[...Array(5)].map((_, j) => (
-                  <Star key={j} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                ))}
+            <div className="group flex h-full flex-col rounded-xl glass-card p-4 transition-all hover:border-primary/60 hover:glow-shadow-sm">
+              {/* Video embed */}
+              <div className="relative mb-4 aspect-video w-full overflow-hidden rounded-xl">
+                <iframe
+                  src={t.videoUrl}
+                  title={`Testimonio de ${t.name}`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 h-full w-full rounded-xl"
+                  loading="lazy"
+                />
               </div>
-              <p className="mb-6 flex-1 text-sm leading-relaxed text-muted-foreground italic">
-                "{t.text}"
-              </p>
+
+              {/* Client info */}
               <div className="flex items-center gap-3">
-                <div 
-                  className="flex h-12 w-12 items-center justify-center rounded-full text-sm font-bold text-primary-foreground shadow-lg"
-                  style={{ 
+                <div
+                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-bold text-primary-foreground shadow-lg"
+                  style={{
                     background: "linear-gradient(135deg, #FF6B35, #FFA62B)",
-                    boxShadow: "0 0 15px rgba(255,107,53,0.3)"
+                    boxShadow: "0 0 12px rgba(255,107,53,0.3)",
                   }}
                 >
                   {t.name.charAt(0)}
@@ -61,6 +65,7 @@ const TestimonialsSection = () => (
                   <p className="text-sm font-semibold">
                     {t.name} {t.country}
                   </p>
+                  <p className="text-xs text-muted-foreground">{t.description}</p>
                 </div>
               </div>
             </div>
