@@ -140,29 +140,16 @@ const PackSection = () => (
               Valor <span className="line-through decoration-destructive">$50 USD</span>
             </div>
 
-            {/* Visual header — editor placeholder */}
-            <div
-              className="relative flex h-44 items-end overflow-hidden p-5"
-              style={{
-                background:
-                  "linear-gradient(135deg, hsl(263,70%,20%), hsl(263,50%,30%), hsl(20,80%,35%), hsl(35,90%,40%))",
-              }}
-            >
-              {/* Simulated editor lines */}
-              <div className="absolute inset-0 flex flex-col justify-center gap-2 px-8 opacity-30">
-                {[1, 2, 3, 4, 5, 6].map((i) => (
-                  <div key={i} className="flex items-center gap-2">
-                    <span className="text-[9px] text-white/40">{i}</span>
-                    <div
-                      className="h-1.5 rounded bg-white/30"
-                      style={{ width: `${25 + Math.sin(i) * 30 + 20}%` }}
-                    />
-                  </div>
-                ))}
-              </div>
+            {/* Visual header — tool image */}
+            <div className="relative h-44 overflow-hidden">
+              <img
+                src="https://res.cloudinary.com/dpmt0pzhb/image/upload/v1770431323/Prueba_Lovable_fxblik.png"
+                alt="Vista previa de Lovable Pro"
+                className="h-full w-full object-cover"
+              />
               {/* Overlay gradient for readability */}
-              <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent" />
-              <div className="relative flex items-center gap-3">
+              <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-card to-transparent" />
+              <div className="absolute bottom-4 left-5 flex items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl shadow-lg" style={{ background: "linear-gradient(135deg, hsl(20,100%,60%), hsl(35,100%,58%))" }}>
                   <Rocket className="h-6 w-6 text-primary-foreground" />
                 </div>
