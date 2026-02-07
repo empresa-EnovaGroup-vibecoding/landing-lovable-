@@ -141,7 +141,7 @@ const TestimonialsSection = () => (
       <AnimatedSection delay={0.5}>
         <div className="mt-10 text-center">
           <a
-            href="https://www.facebook.com/IANexusonline"
+            href="https://madewithlovable.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block rounded-lg border border-primary/50 px-6 py-3 font-semibold text-primary transition-all hover:bg-primary/10"
