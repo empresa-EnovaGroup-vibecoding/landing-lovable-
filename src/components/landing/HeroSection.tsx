@@ -81,18 +81,17 @@ const HeroSection = () => {
 
             <AnimatedSection delay={0.15}>
               <p className="mb-6 max-w-lg text-lg text-muted-foreground md:text-xl">
-                Aprende desde cero a construir{" "}
+                Recibe Lovable Pro, la herramienta #1 para crear{" "}
                 <span className="font-semibold" style={{ background: "linear-gradient(135deg, #FF6B35, #FFA62B)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
                   aplicaciones reales con IA
                 </span>{" "}
-                sin escribir una línea de código
+                — sin escribir una línea de código
               </p>
             </AnimatedSection>
 
             <AnimatedSection delay={0.2}>
               <p className="mb-8 max-w-lg text-base text-muted-foreground">
-                Recibe la herramienta más poderosa del mundo para crear aplicaciones + un taller
-                paso a paso. Todo por el precio de un café.
+                200 créditos Pro + taller paso a paso incluido. Todo por el precio de un café.
               </p>
             </AnimatedSection>
 
