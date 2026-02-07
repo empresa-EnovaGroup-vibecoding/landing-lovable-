@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { z } from "zod";
 import AnimatedSection from "./AnimatedSection";
 import appDashboard from "@/assets/app-dashboard.jpg";
 import appEcommerce from "@/assets/app-ecommerce.jpg";
@@ -19,11 +20,28 @@ const appScreenshots = [
   appLanding, appBooking, appChat, appAdmin,
 ];
 
+const formSchema = z.object({
+  name: z.string().trim().min(1, "El nombre es requerido").max(100, "Máximo 100 caracteres"),
+  email: z.string().trim().email("Email inválido").max(255, "Máximo 255 caracteres"),
+  phone: z.string().trim().min(1, "El teléfono es requerido").max(20, "Máximo 20 caracteres").regex(/^[+\d\s()-]+$/, "Formato de teléfono inválido"),
+});
+
 const HeroSection = () => {
   const [formData, setFormData] = useState({ name: "", email: "", phone: "" });
+  const [errors, setErrors] = useState<Record<string, string>>({});
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const result = formSchema.safeParse(formData);
+    if (!result.success) {
+      const fieldErrors: Record<string, string> = {};
+      result.error.errors.forEach((err) => {
+        if (err.path[0]) fieldErrors[err.path[0] as string] = err.message;
+      });
+      setErrors(fieldErrors);
+      return;
+    }
+    setErrors({});
     window.open(
       "https://wa.me/584264399792?text=Hola%20quiero%20mi%20acceso%20a%20Lovable%20Pro",
       "_blank"
@@ -104,30 +122,39 @@ const HeroSection = () => {
                     Completa tus datos y recibe acceso inmediato
                   </p>
 
-                  <input
-                    type="text"
-                    placeholder="Tu nombre"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full rounded-lg border border-border bg-muted/50 px-4 py-3 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary backdrop-blur-sm"
-                    required
-                  />
-                  <input
-                    type="email"
-                    placeholder="tu@email.com"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full rounded-lg border border-border bg-muted/50 px-4 py-3 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary backdrop-blur-sm"
-                    required
-                  />
-                  <input
-                    type="tel"
-                    placeholder="+52 / +57 / +593"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full rounded-lg border border-border bg-muted/50 px-4 py-3 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary backdrop-blur-sm"
-                    required
-                  />
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Tu nombre"
+                      maxLength={100}
+                      value={formData.name}
+                      onChange={(e) => { setFormData({ ...formData, name: e.target.value }); setErrors((prev) => ({ ...prev, name: "" })); }}
+                      className="w-full rounded-lg border border-border bg-muted/50 px-4 py-3 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary backdrop-blur-sm"
+                    />
+                    {errors.name && <p className="mt-1 text-xs text-destructive">{errors.name}</p>}
+                  </div>
+                  <div>
+                    <input
+                      type="email"
+                      placeholder="tu@email.com"
+                      maxLength={255}
+                      value={formData.email}
+                      onChange={(e) => { setFormData({ ...formData, email: e.target.value }); setErrors((prev) => ({ ...prev, email: "" })); }}
+                      className="w-full rounded-lg border border-border bg-muted/50 px-4 py-3 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary backdrop-blur-sm"
+                    />
+                    {errors.email && <p className="mt-1 text-xs text-destructive">{errors.email}</p>}
+                  </div>
+                  <div>
+                    <input
+                      type="tel"
+                      placeholder="+52 / +57 / +593"
+                      maxLength={20}
+                      value={formData.phone}
+                      onChange={(e) => { setFormData({ ...formData, phone: e.target.value }); setErrors((prev) => ({ ...prev, phone: "" })); }}
+                      className="w-full rounded-lg border border-border bg-muted/50 px-4 py-3 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary backdrop-blur-sm"
+                    />
+                    {errors.phone && <p className="mt-1 text-xs text-destructive">{errors.phone}</p>}
+                  </div>
 
                   <button
                     type="submit"
