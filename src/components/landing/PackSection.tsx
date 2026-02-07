@@ -1,4 +1,4 @@
-import { Rocket, GraduationCap, Check, Play, Globe, ChevronRight } from "lucide-react";
+import { Rocket, GraduationCap, Check, Globe } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 const toolFeatures = [
@@ -192,29 +192,15 @@ const PackSection = () => (
               BONUS GRATIS
             </div>
 
-            {/* Visual header — play preview */}
-            <div
-              className="relative flex h-44 items-center justify-center overflow-hidden"
-              style={{
-                background:
-                  "linear-gradient(135deg, hsl(230,50%,10%), hsl(230,40%,14%), hsl(263,40%,18%))",
-              }}
-            >
-              {/* Decorative grid dots */}
-              <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle, hsl(20,100%,60%) 1px, transparent 1px)", backgroundSize: "24px 24px" }} />
-
-              {/* Play button */}
-              <div className="relative flex h-20 w-20 items-center justify-center rounded-full shadow-xl transition-transform duration-300 group-hover:scale-110" style={{ background: "linear-gradient(135deg, hsl(20,100%,60%), hsl(35,100%,58%))" }}>
-                <Play className="h-8 w-8 translate-x-0.5 text-primary-foreground" fill="currentColor" />
-              </div>
-
-              {/* Label */}
-              <div className="absolute bottom-3 left-0 right-0 text-center text-xs font-medium text-muted-foreground/60">
-                Vista previa del taller
-              </div>
-
+            {/* Visual header — workshop image */}
+            <div className="relative h-44 overflow-hidden">
+              <img
+                src="https://res.cloudinary.com/dpmt0pzhb/image/upload/v1770430928/lovable_q3ci4u.png"
+                alt="Vista previa del taller"
+                className="h-full w-full object-cover"
+              />
               {/* Overlay gradient for readability */}
-              <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-card/80 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-card to-transparent" />
               <div className="absolute bottom-4 left-5 flex items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl shadow-lg" style={{ background: "linear-gradient(135deg, hsl(20,100%,60%), hsl(35,100%,58%))" }}>
                   <GraduationCap className="h-6 w-6 text-primary-foreground" />
