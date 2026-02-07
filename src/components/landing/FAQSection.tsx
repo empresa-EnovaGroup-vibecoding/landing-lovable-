@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "¿Es pago mensual?",
-    a: "No. Es pago único. Los 30 días son para crear. Lo que creas es tuyo de por vida. No es como Netflix que si no pagas pierdes todo. Aquí te llevas tu trabajo para siempre.",
+    a: "No. Es pago único de $5 USD. Recibes 200 créditos Pro para crear tus apps y webs. Todo lo que crees es tuyo para siempre: lo descargas, lo publicas y funciona sin pagar más. Los créditos son tu material de construcción. Si en el futuro quieres crear nuevos proyectos, renuevas tus créditos desde $5 USD.",
   },
   {
     q: "¿Qué pasa si dejo de pagar?",
