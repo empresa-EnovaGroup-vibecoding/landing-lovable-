@@ -40,7 +40,7 @@ const wastedItems = [
 ];
 
 const ProblemSection = () => (
-  <section className="relative py-20 md:py-28 surface-elevated particles-bg">
+  <section className="relative py-20 md:py-28">
     <div className="container relative z-10 mx-auto">
       {/* Part 1: General pain */}
       <AnimatedSection>

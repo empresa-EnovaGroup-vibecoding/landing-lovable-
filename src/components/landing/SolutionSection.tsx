@@ -24,7 +24,7 @@ const pillars = [
 ];
 
 const SolutionSection = () => (
-  <section className="relative py-20 md:py-28 particles-bg">
+  <section className="relative py-20 md:py-28">
     <div className="container relative z-10 mx-auto">
       <AnimatedSection>
         <span className="mb-4 block text-center text-sm font-semibold uppercase tracking-wider text-primary">

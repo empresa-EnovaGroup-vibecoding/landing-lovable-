@@ -65,7 +65,7 @@ const HeroSection = () => {
           <AnimatedSection>
             <span
               className="mb-6 inline-block rounded-full px-4 py-1.5 text-sm font-bold text-primary-foreground"
-              style={{ background: "linear-gradient(135deg, #FF6B35, #FFA62B)" }}
+              style={{ background: "linear-gradient(135deg, #FF751A, #E8306E, #9D26D9)" }}
             >
               SISTEMA LANZA TU APP
             </span>
@@ -84,7 +84,7 @@ const HeroSection = () => {
               <span
                 className="font-semibold"
                 style={{
-                  background: "linear-gradient(135deg, #FF6B35, #FFA62B)",
+                  background: "linear-gradient(135deg, #FF751A, #E8306E, #9D26D9)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -128,7 +128,7 @@ const HeroSection = () => {
               className="absolute inset-0 rounded-3xl opacity-40 blur-3xl"
               style={{
                 background:
-                  "radial-gradient(ellipse at center, rgba(255,107,53,0.45) 0%, rgba(123,47,247,0.25) 55%, transparent 80%)",
+                  "radial-gradient(ellipse at center, rgba(232,48,110,0.45) 0%, rgba(157,38,217,0.25) 55%, transparent 80%)",
               }}
             />
 
@@ -139,7 +139,7 @@ const HeroSection = () => {
               <div className="flex items-center gap-2">
                 <div
                   className="h-6 w-6 flex-shrink-0 rounded-full"
-                  style={{ background: "linear-gradient(135deg, #FF6B35, #FFA62B)" }}
+                  style={{ background: "linear-gradient(135deg, #FF751A, #E8306E, #9D26D9)" }}
                 />
                 <div>
                   <div className="text-xs font-semibold whitespace-nowrap">E-Commerce App</div>

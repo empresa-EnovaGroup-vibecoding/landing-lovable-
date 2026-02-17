@@ -20,7 +20,7 @@ const steps = [
 ];
 
 const HowItWorks = () => (
-  <section className="relative py-20 md:py-28 particles-bg">
+  <section className="relative py-20 md:py-28">
     <div className="container relative z-10 mx-auto">
       <AnimatedSection>
         <h2 className="mb-14 text-center text-3xl font-bold md:text-4xl">
@@ -31,7 +31,7 @@ const HowItWorks = () => (
 
       <div className="relative grid gap-8 md:grid-cols-3">
         {/* Connector line */}
-        <div className="absolute left-0 right-0 top-12 hidden h-0.5 md:block" style={{ background: "linear-gradient(90deg, #FF6B35, #FFA62B)" }} />
+        <div className="absolute left-0 right-0 top-12 hidden h-0.5 md:block" style={{ background: "linear-gradient(90deg, #FF751A, #E8306E, #9D26D9)" }} />
 
         {steps.map((s, i) => (
           <AnimatedSection key={i} delay={i * 0.15}>

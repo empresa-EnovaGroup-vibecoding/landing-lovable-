@@ -83,8 +83,8 @@ const VideoCard = ({
             <div
               className="flex h-16 w-16 items-center justify-center rounded-full shadow-lg transition-transform hover:scale-110"
               style={{
-                background: "linear-gradient(135deg, #FF6B35, #FFA62B)",
-                boxShadow: "0 0 24px rgba(255,107,53,0.4)",
+                background: "linear-gradient(135deg, #FF751A, #E8306E, #9D26D9)",
+                boxShadow: "0 0 24px rgba(232,48,110,0.4)",
               }}
             >
               <Play className="h-7 w-7 fill-white text-white ml-1" />
@@ -98,8 +98,8 @@ const VideoCard = ({
         <div
           className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-bold text-primary-foreground shadow-lg"
           style={{
-            background: "linear-gradient(135deg, #FF6B35, #FFA62B)",
-            boxShadow: "0 0 12px rgba(255,107,53,0.3)",
+            background: "linear-gradient(135deg, #FF751A, #E8306E, #9D26D9)",
+            boxShadow: "0 0 12px rgba(232,48,110,0.3)",
           }}
         >
           {testimonial.name.charAt(0)}
@@ -118,7 +118,7 @@ const VideoCard = ({
 };
 
 const TestimonialsSection = () => (
-  <section className="relative py-20 md:py-28 surface-elevated particles-bg">
+  <section className="relative py-20 md:py-28">
     <div className="container relative z-10 mx-auto">
       <AnimatedSection>
         <h2 className="mb-4 text-center text-3xl font-bold md:text-4xl">

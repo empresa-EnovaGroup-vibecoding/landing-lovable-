@@ -64,7 +64,7 @@ const CTASection = () => {
   };
 
   return (
-    <section className="relative overflow-hidden py-20 md:py-28 particles-bg">
+    <section className="relative overflow-hidden py-20 md:py-28">
       {/* Background glows */}
       <div
         className="absolute inset-0 opacity-30"

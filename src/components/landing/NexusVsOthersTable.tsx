@@ -24,7 +24,7 @@ const CellValue = ({ value }: { value: string | boolean }) => {
 };
 
 const NexusVsOthersTable = () => (
-  <section className="relative py-20 md:py-28 surface-elevated particles-bg">
+  <section className="relative py-20 md:py-28">
     <div className="container relative z-10 mx-auto">
       <AnimatedSection>
         <h2 className="mb-4 text-center text-3xl font-bold md:text-4xl">
@@ -54,7 +54,7 @@ const NexusVsOthersTable = () => (
                       className="rounded-full px-3 py-1 text-xs font-bold text-primary-foreground"
                       style={{
                         background:
-                          "linear-gradient(135deg, hsl(20,100%,60%), hsl(35,100%,58%))",
+                          "linear-gradient(135deg, #FF751A, #E8306E, #9D26D9)",
                       }}
                     >
                       RECOMENDADO
@@ -88,9 +88,9 @@ const NexusVsOthersTable = () => (
                   <td
                     className="p-4"
                     style={{
-                      borderLeft: "2px solid #FF6B35",
-                      borderRight: "2px solid #FFA62B",
-                      background: "rgba(255,107,53,0.05)",
+                      borderLeft: "2px solid #E8306E",
+                      borderRight: "2px solid #9D26D9",
+                      background: "rgba(232,48,110,0.05)",
                     }}
                   >
                     <CellValue value={row.nexus} />

@@ -51,7 +51,7 @@ const CellValue = ({ value }: { value: string | boolean }) => {
 };
 
 const ComparisonTable = () => (
-  <section className="relative py-20 md:py-28 particles-bg">
+  <section className="relative py-20 md:py-28">
     <div className="container relative z-10 mx-auto">
       <AnimatedSection>
         <h2 className="mb-14 text-center text-3xl font-bold md:text-4xl">

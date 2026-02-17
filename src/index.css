@@ -15,16 +15,16 @@
     --popover: 0 0% 7%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 20 100% 60%;
+    --primary: 338 100% 68%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 263 70% 50%;
+    --secondary: 263 70% 55%;
     --secondary-foreground: 0 0% 98%;
 
     --muted: 0 0% 12%;
     --muted-foreground: 0 0% 55%;
 
-    --accent: 35 100% 58%;
+    --accent: 220 90% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -32,30 +32,30 @@
 
     --border: 0 0% 16%;
     --input: 0 0% 16%;
-    --ring: 20 100% 60%;
+    --ring: 338 100% 68%;
 
     --radius: 0.75rem;
 
-    /* Orange CTA gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(20, 100%, 60%), hsl(35, 100%, 58%));
-    --gradient-primary-hover: linear-gradient(135deg, hsl(20, 100%, 65%), hsl(35, 100%, 63%));
-    --gradient-intense: linear-gradient(135deg, hsl(20, 100%, 55%), hsl(35, 100%, 50%));
+    /* Competitor-matched gradient: orange → magenta → purple */
+    --gradient-primary: linear-gradient(135deg, #FF751A, #E8306E, #9D26D9);
+    --gradient-primary-hover: linear-gradient(135deg, #FF8533, #F04080, #AD36E9);
+    --gradient-intense: linear-gradient(135deg, #FF6510, #D82060, #8D16C9);
     --gradient-subtle: linear-gradient(135deg, hsl(0, 0%, 6%), hsl(0, 0%, 8%));
-    --gradient-radial-glow: radial-gradient(ellipse at center, hsl(20, 100%, 60%, 0.12) 0%, transparent 70%);
-    --gradient-heart: linear-gradient(135deg, #FF6B35, #FF3CAC, #7B2FF7, #2196F3);
-    --shadow-glow: 0 0 40px hsl(20, 100%, 60%, 0.3);
-    --shadow-glow-sm: 0 0 20px hsl(20, 100%, 60%, 0.2);
+    --gradient-radial-glow: radial-gradient(ellipse at center, rgba(232, 48, 110, 0.12) 0%, transparent 70%);
+    --gradient-heart: linear-gradient(135deg, #FF751A, #E8306E, #9D26D9);
+    --shadow-glow: 0 0 40px rgba(232, 48, 110, 0.3);
+    --shadow-glow-sm: 0 0 20px rgba(232, 48, 110, 0.2);
     --surface-elevated: 0 0% 8%;
     --text-dim: 0 0% 45%;
 
     --sidebar-background: 0 0% 4%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 20 100% 60%;
+    --sidebar-primary: 338 100% 68%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 0 0% 12%;
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 0 0% 16%;
-    --sidebar-ring: 20 100% 60%;
+    --sidebar-ring: 338 100% 68%;
   }
 }
 
@@ -143,18 +143,18 @@
   }
 
   .cta-button {
-    background: linear-gradient(135deg, #FF6B35, #FFA62B);
+    background: linear-gradient(135deg, #FF751A, #E8306E, #9D26D9);
     color: white;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+    box-shadow: 0 4px 20px rgba(232, 48, 110, 0.3);
   }
 
   .cta-button:hover {
-    background: linear-gradient(135deg, #FF7B45, #FFB63B);
-    box-shadow: 0 6px 30px rgba(255, 107, 53, 0.5);
+    background: linear-gradient(135deg, #FF8533, #F04080, #AD36E9);
+    box-shadow: 0 6px 30px rgba(232, 48, 110, 0.5);
     transform: translateY(-1px);
   }
 
@@ -175,19 +175,19 @@
     content: '';
     position: absolute;
     inset: 0;
-    background-image: 
-      radial-gradient(1.5px 1.5px at 10% 20%, hsl(20, 100%, 60%, 0.3) 50%, transparent 50%),
-      radial-gradient(1px 1px at 30% 60%, hsl(263, 70%, 50%, 0.25) 50%, transparent 50%),
-      radial-gradient(1.5px 1.5px at 50% 10%, hsl(35, 100%, 58%, 0.3) 50%, transparent 50%),
-      radial-gradient(1px 1px at 70% 40%, hsl(20, 100%, 60%, 0.2) 50%, transparent 50%),
-      radial-gradient(1.5px 1.5px at 90% 70%, hsl(263, 70%, 50%, 0.3) 50%, transparent 50%),
-      radial-gradient(1px 1px at 20% 80%, hsl(35, 100%, 58%, 0.25) 50%, transparent 50%),
-      radial-gradient(1.5px 1.5px at 60% 90%, hsl(20, 100%, 60%, 0.2) 50%, transparent 50%),
-      radial-gradient(1px 1px at 80% 15%, hsl(263, 70%, 50%, 0.3) 50%, transparent 50%),
-      radial-gradient(1.5px 1.5px at 40% 35%, hsl(35, 100%, 58%, 0.2) 50%, transparent 50%),
-      radial-gradient(1px 1px at 15% 50%, hsl(20, 100%, 60%, 0.25) 50%, transparent 50%),
-      radial-gradient(1.5px 1.5px at 85% 85%, hsl(263, 70%, 50%, 0.2) 50%, transparent 50%),
-      radial-gradient(1px 1px at 55% 45%, hsl(35, 100%, 58%, 0.3) 50%, transparent 50%);
+    background-image:
+      radial-gradient(1.5px 1.5px at 10% 20%, rgba(255,117,26,0.3) 50%, transparent 50%),
+      radial-gradient(1px 1px at 30% 60%, rgba(232,48,110,0.25) 50%, transparent 50%),
+      radial-gradient(1.5px 1.5px at 50% 10%, rgba(157,38,217,0.3) 50%, transparent 50%),
+      radial-gradient(1px 1px at 70% 40%, rgba(255,117,26,0.2) 50%, transparent 50%),
+      radial-gradient(1.5px 1.5px at 90% 70%, rgba(232,48,110,0.3) 50%, transparent 50%),
+      radial-gradient(1px 1px at 20% 80%, rgba(157,38,217,0.25) 50%, transparent 50%),
+      radial-gradient(1.5px 1.5px at 60% 90%, rgba(255,117,26,0.2) 50%, transparent 50%),
+      radial-gradient(1px 1px at 80% 15%, rgba(232,48,110,0.3) 50%, transparent 50%),
+      radial-gradient(1.5px 1.5px at 40% 35%, rgba(157,38,217,0.2) 50%, transparent 50%),
+      radial-gradient(1px 1px at 15% 50%, rgba(255,117,26,0.25) 50%, transparent 50%),
+      radial-gradient(1.5px 1.5px at 85% 85%, rgba(232,48,110,0.2) 50%, transparent 50%),
+      radial-gradient(1px 1px at 55% 45%, rgba(157,38,217,0.3) 50%, transparent 50%);
     animation: particle-float 8s ease-in-out infinite;
     pointer-events: none;
     z-index: 1;

@@ -35,7 +35,7 @@ const models = [
 ];
 
 const PromptsSection = () => (
-  <section className="relative py-20 md:py-28 surface-elevated particles-bg">
+  <section className="relative py-20 md:py-28">
     <div className="container relative z-10 mx-auto">
       <AnimatedSection>
         <div className="mb-4 flex items-center justify-center gap-2">
@@ -67,7 +67,7 @@ const PromptsSection = () => (
                   className="rounded-full px-2.5 py-0.5 text-xs font-semibold text-primary-foreground"
                   style={{
                     background:
-                      "linear-gradient(135deg, hsl(20,100%,60%), hsl(35,100%,58%))",
+                      "linear-gradient(135deg, #FF751A, #E8306E, #9D26D9)",
                   }}
                 >
                   {p.time}

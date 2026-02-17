@@ -48,7 +48,7 @@ const CountUp = ({ target, prefix = "", suffix = "" }: { target: number; prefix?
 };
 
 const StatsSection = () => (
-  <section className="relative py-16 md:py-20 border-t border-b border-border/50 particles-bg" style={{ background: "hsl(230, 45%, 8%)" }}>
+  <section className="relative py-16 md:py-20 border-t border-b border-border/50">
     <div className="container relative z-10 mx-auto">
       <div className="grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-6">
         {stats.map((stat, i) => (

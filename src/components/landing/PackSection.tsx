@@ -21,7 +21,7 @@ const workshopFeatures = [
 ];
 
 const PackSection = () => (
-  <section className="relative py-20 md:py-28 surface-elevated particles-bg">
+  <section className="relative py-20 md:py-28">
     <div className="container relative z-10 mx-auto">
       <AnimatedSection>
         <h2 className="mb-14 text-center text-3xl font-bold md:text-4xl">
@@ -32,7 +32,7 @@ const PackSection = () => (
       <div className="grid gap-8 md:grid-cols-2">
         {/* Card 1 — Herramienta Lovable Pro */}
         <AnimatedSection delay={0.1}>
-          <div className="group relative h-full overflow-hidden rounded-2xl border border-border/50 bg-card transition-all duration-300 hover:scale-[1.02] hover:border-[hsl(20,100%,60%)] hover:shadow-[0_0_30px_hsl(20,100%,60%,0.15)]">
+          <div className="group relative h-full overflow-hidden rounded-2xl border border-border/50 bg-card transition-all duration-300 hover:scale-[1.02] hover:border-[#E8306E] hover:shadow-[0_0_30px_rgba(232,48,110,0.15)]">
             {/* Badge */}
             <div className="absolute right-4 top-4 z-20 rounded-full bg-muted/80 px-3 py-1 text-xs font-semibold text-muted-foreground backdrop-blur-sm">
               Valor <span className="line-through decoration-destructive">$50 USD</span>
@@ -48,7 +48,7 @@ const PackSection = () => (
               {/* Overlay gradient for readability */}
               <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-card to-transparent" />
               <div className="absolute bottom-4 left-5 flex items-center gap-3">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl shadow-lg" style={{ background: "linear-gradient(135deg, hsl(20,100%,60%), hsl(35,100%,58%))" }}>
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl shadow-lg" style={{ background: "linear-gradient(135deg, #FF751A, #E8306E, #9D26D9)" }}>
                   <Rocket className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground">Herramienta Lovable Pro</h3>
@@ -71,9 +71,9 @@ const PackSection = () => (
 
         {/* Card 2 — Taller Paso a Paso */}
         <AnimatedSection delay={0.2}>
-          <div className="group relative h-full overflow-hidden rounded-2xl border border-border/50 bg-card transition-all duration-300 hover:scale-[1.02] hover:border-[hsl(20,100%,60%)] hover:shadow-[0_0_30px_hsl(20,100%,60%,0.15)]">
+          <div className="group relative h-full overflow-hidden rounded-2xl border border-border/50 bg-card transition-all duration-300 hover:scale-[1.02] hover:border-[#E8306E] hover:shadow-[0_0_30px_rgba(232,48,110,0.15)]">
             {/* Badge */}
-            <div className="absolute right-4 top-4 z-20 rounded-full px-3 py-1 text-xs font-bold text-primary-foreground" style={{ background: "linear-gradient(135deg, hsl(20,100%,60%), hsl(35,100%,58%))" }}>
+            <div className="absolute right-4 top-4 z-20 rounded-full px-3 py-1 text-xs font-bold text-primary-foreground" style={{ background: "linear-gradient(135deg, #FF751A, #E8306E, #9D26D9)" }}>
               BONUS GRATIS
             </div>
 
@@ -87,7 +87,7 @@ const PackSection = () => (
               {/* Overlay gradient for readability */}
               <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-card to-transparent" />
               <div className="absolute bottom-4 left-5 flex items-center gap-3">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl shadow-lg" style={{ background: "linear-gradient(135deg, hsl(20,100%,60%), hsl(35,100%,58%))" }}>
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl shadow-lg" style={{ background: "linear-gradient(135deg, #FF751A, #E8306E, #9D26D9)" }}>
                   <GraduationCap className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground">Taller Paso a Paso</h3>
