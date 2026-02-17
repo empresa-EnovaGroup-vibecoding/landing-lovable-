@@ -1,4 +1,4 @@
-import { Rocket, GraduationCap, Check, Globe } from "lucide-react";
+import { Rocket, GraduationCap, Check } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 const toolFeatures = [
@@ -12,123 +12,21 @@ const toolFeatures = [
 ];
 
 const workshopFeatures = [
-  "Acceso de por vida",
+  "Acceso de por vida al taller completo",
   "Desde cero, sin experiencia previa",
-  "Plantillas de proyectos validados",
-  "Metodología para transformar ideas en productos",
-  "Cómo construir con IA en días",
+  "Modelos validados de creación de sistemas",
+  "Sistemas campeones que ya generan ingresos",
+  "Cómo publicar y cobrar por tu app",
   "Estrategias para conseguir clientes",
 ];
-
-const BrowserMockup = () => (
-  <div className="relative mx-auto max-w-3xl">
-    {/* Glow behind browser */}
-    <div
-      className="absolute -inset-8 rounded-3xl opacity-40 blur-3xl"
-      style={{
-        background:
-          "radial-gradient(ellipse at center, hsl(20 100% 60% / 0.35), hsl(263 70% 50% / 0.2), transparent 70%)",
-      }}
-    />
-
-    {/* Browser frame */}
-    <div className="relative overflow-hidden rounded-xl border border-border/60 shadow-2xl">
-      {/* Title bar */}
-      <div className="flex items-center gap-2 border-b border-border/40 bg-[hsl(230,35%,12%)] px-4 py-2.5">
-        <div className="flex gap-1.5">
-          <span className="h-3 w-3 rounded-full bg-[hsl(0,70%,55%)]" />
-          <span className="h-3 w-3 rounded-full bg-[hsl(45,90%,55%)]" />
-          <span className="h-3 w-3 rounded-full bg-[hsl(130,50%,50%)]" />
-        </div>
-        <div className="ml-3 flex flex-1 items-center gap-2 rounded-md bg-[hsl(230,30%,15%)] px-3 py-1 text-xs text-muted-foreground">
-          <Globe className="h-3 w-3 shrink-0" />
-          <span>lovable.dev</span>
-        </div>
-      </div>
-
-      {/* Browser content — simulated Lovable UI */}
-      <div className="flex h-48 md:h-64 bg-[hsl(230,50%,7%)]">
-        {/* Sidebar */}
-        <div className="hidden w-14 shrink-0 border-r border-border/30 bg-[hsl(230,40%,9%)] p-2 sm:block md:w-48">
-          <div className="mb-3 flex items-center gap-2">
-            <div className="h-6 w-6 rounded-md" style={{ background: "linear-gradient(135deg, hsl(20,100%,60%), hsl(35,100%,58%))" }} />
-            <span className="hidden text-xs font-semibold text-foreground md:inline">Mi Proyecto</span>
-          </div>
-          {[1, 2, 3, 4].map((i) => (
-            <div
-              key={i}
-              className="mb-2 flex items-center gap-2 rounded-md px-2 py-1.5"
-              style={{
-                background: i === 1 ? "hsl(230,30%,15%)" : "transparent",
-              }}
-            >
-              <div className="h-3 w-3 rounded bg-muted-foreground/30" />
-              <div
-                className="hidden h-2 rounded bg-muted-foreground/20 md:block"
-                style={{ width: `${50 + i * 12}%` }}
-              />
-            </div>
-          ))}
-        </div>
-
-        {/* Main content area */}
-        <div className="flex flex-1 flex-col p-3 md:p-5">
-          <div className="mb-3 flex items-center justify-between">
-            <div className="h-3 w-24 rounded bg-foreground/20 md:w-36" />
-            <div className="flex gap-2">
-              <div className="h-6 w-16 rounded-md" style={{ background: "linear-gradient(135deg, hsl(20,100%,60%), hsl(35,100%,58%))" }} />
-              <div className="h-6 w-6 rounded-md bg-muted" />
-            </div>
-          </div>
-          <div className="flex flex-1 gap-3">
-            {/* Code-like area */}
-            <div className="flex-1 rounded-lg bg-[hsl(230,40%,10%)] p-3">
-              {[1, 2, 3, 4, 5].map((i) => (
-                <div key={i} className="mb-1.5 flex items-center gap-2">
-                  <span className="text-[10px] text-muted-foreground/40">{i}</span>
-                  <div
-                    className="h-2 rounded"
-                    style={{
-                      width: `${20 + Math.sin(i * 2) * 40 + 30}%`,
-                      background:
-                        i % 3 === 0
-                          ? "hsl(263,70%,50%,0.3)"
-                          : i % 2 === 0
-                          ? "hsl(20,100%,60%,0.25)"
-                          : "hsl(215,20%,65%,0.15)",
-                    }}
-                  />
-                </div>
-              ))}
-            </div>
-            {/* Preview area */}
-            <div className="hidden flex-1 rounded-lg border border-border/20 bg-[hsl(230,35%,12%)] p-3 md:block">
-              <div className="mb-2 h-3 w-20 rounded bg-foreground/15" />
-              <div className="mb-1.5 h-2 w-full rounded bg-muted-foreground/10" />
-              <div className="mb-1.5 h-2 w-3/4 rounded bg-muted-foreground/10" />
-              <div className="mt-3 h-8 w-20 rounded-md" style={{ background: "linear-gradient(135deg, hsl(20,100%,60%), hsl(35,100%,58%))" }} />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-);
 
 const PackSection = () => (
   <section className="relative py-20 md:py-28 surface-elevated particles-bg">
     <div className="container relative z-10 mx-auto">
       <AnimatedSection>
         <h2 className="mb-14 text-center text-3xl font-bold md:text-4xl">
-          Todo lo que incluye tu <span className="gradient-text">Pack Lanza Tu App HOY</span>
+          Todo lo que incluye el <span className="gradient-text">Sistema Lanza Tu App</span>
         </h2>
-      </AnimatedSection>
-
-      {/* Browser Mockup */}
-      <AnimatedSection delay={0.05}>
-        <div className="mb-14">
-          <BrowserMockup />
-        </div>
       </AnimatedSection>
 
       <div className="grid gap-8 md:grid-cols-2">
@@ -215,7 +113,7 @@ const PackSection = () => (
       <AnimatedSection delay={0.3}>
         <div className="mt-14 text-center">
           <p className="mb-2 text-2xl text-muted-foreground line-through decoration-destructive decoration-2">
-            $25 USD
+            $152 USD
           </p>
           <p className="mb-2 text-5xl font-extrabold md:text-6xl">
             <span className="gradient-text">$5 USD</span>

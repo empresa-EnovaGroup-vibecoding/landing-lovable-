@@ -8,32 +8,24 @@ import AnimatedSection from "./AnimatedSection";
 
 const faqs = [
   {
-    q: "¿Necesito saber programar?",
-    a: "Para nada. Le escribes en español lo que quieres, por ejemplo: 'Hazme una app para mi negocio de comida con menú y fotos' y la IA lo construye en minutos. Si sabes enviar un mensaje de WhatsApp, sabes usar Lovable.",
+    q: "¿Qué herramienta usan para crear las apps?",
+    a: "Usamos Lovable, una herramienta de IA que genera apps completas con solo describirle lo que quieres en español. Es como tener un programador que trabaja en segundos. Tú recibes acceso Pro con 200 créditos como parte del sistema.",
   },
   {
-    q: "¿Los créditos se acaban rápido?",
-    a: "Los créditos solo se gastan mientras construyes. Cada crédito es un mensaje a la IA. Con 200 créditos puedes crear entre 3 y 5 apps completas. Una vez lista tu app, funciona para siempre sin gastar nada más.",
+    q: "¿Necesito saber programar?",
+    a: "Para nada. Le escribes en español lo que quieres, por ejemplo: 'Hazme un sistema de inventario con alertas' y la IA lo construye en minutos. Si sabes enviar un mensaje de WhatsApp, puedes crear tu app.",
+  },
+  {
+    q: "¿Puedo cobrar por las apps que creo?",
+    a: "Sí. El taller incluye estrategias para publicar tu sistema y configurar cobros automáticos. Muchos alumnos ya generan ingresos recurrentes con las apps que crearon.",
   },
   {
     q: "¿Es pago mensual?",
-    a: "No. Es pago único de $5 USD. Recibes 200 créditos Pro para crear tus apps y webs. Todo lo que crees es tuyo para siempre: lo descargas, lo publicas y funciona sin pagar más. Los créditos son tu material de construcción. Si en el futuro quieres crear nuevos proyectos, renuevas tus créditos desde $5 USD.",
-  },
-  {
-    q: "¿Qué pasa si dejo de pagar?",
-    a: "Tu app sigue funcionando. Puedes descargar el código a GitHub y alojarlo gratis en Vercel o Netlify. Tu trabajo es tuyo.",
+    a: "No. Es pago único de $5 USD. Recibes la herramienta pro, el taller completo, los modelos validados y las estrategias de monetización. Todo lo que crees es tuyo para siempre.",
   },
   {
     q: "¿Cómo sé que no es estafa?",
-    a: "Llevamos más de 1 año con clientes reales en México, Colombia y Ecuador. Puedes ver nuestra trayectoria en facebook.com/IANexusonline",
-  },
-  {
-    q: "¿Puedo usarlo desde el celular?",
-    a: "Sí, funciona desde el navegador. Para mayor comodidad recomendamos computadora, pero muchos clientes empezaron desde el teléfono.",
-  },
-  {
-    q: "¿Por qué tan barato?",
-    a: "Creemos que pagar $25 USD mensuales es una barrera para emprendedores en Latinoamérica. Ofrecemos este precio de apoyo a la comunidad para que la tecnología no te detenga por falta de presupuesto.",
+    a: "Llevamos más de 1 año con clientes reales en México, Colombia y Ecuador. Puedes ver los testimonios en video de emprendedores que ya lanzaron sus apps con nuestro sistema.",
   },
 ];
 

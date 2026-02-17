@@ -1,21 +1,21 @@
-import { CreditCard, Play, Rocket } from "lucide-react";
+import { Lightbulb, Rocket, DollarSign } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 const steps = [
   {
-    icon: CreditCard,
-    title: "Paga y recibe tus accesos",
-    desc: "En minutos tienes tu cuenta Pro activada por WhatsApp",
-  },
-  {
-    icon: Play,
-    title: "Aprende con el taller",
-    desc: "Videos cortos, a tu ritmo, desde cero",
+    icon: Lightbulb,
+    title: "Elige tu modelo o idea",
+    desc: "Toma nuestros modelos validados o describe tu propia idea desde cero",
   },
   {
     icon: Rocket,
-    title: "Crea tu app con IA",
-    desc: "Le dices qué quieres y Lovable lo construye",
+    title: "La IA construye por ti",
+    desc: "La herramienta crea tu sistema en minutos. Tú solo ajustas y personalizas",
+  },
+  {
+    icon: DollarSign,
+    title: "Publica y empieza a cobrar",
+    desc: "Tu app queda online para que cualquiera la use desde su celular — y tú cobras por ella",
   },
 ];
 
@@ -24,7 +24,8 @@ const HowItWorks = () => (
     <div className="container relative z-10 mx-auto">
       <AnimatedSection>
         <h2 className="mb-14 text-center text-3xl font-bold md:text-4xl">
-          3 pasos para tener tu <span className="gradient-text">app lista</span>
+          3 pasos: de la idea al{" "}
+          <span className="gradient-text">primer cobro</span>
         </h2>
       </AnimatedSection>
 

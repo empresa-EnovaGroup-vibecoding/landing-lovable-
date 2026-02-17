@@ -122,11 +122,11 @@ const TestimonialsSection = () => (
     <div className="container relative z-10 mx-auto">
       <AnimatedSection>
         <h2 className="mb-4 text-center text-3xl font-bold md:text-4xl">
-          Mira lo que nuestros clientes están{" "}
-          <span className="gradient-text">creando</span>
+          Ellos empezaron sin saber nada.{" "}
+          <span className="gradient-text">Hoy tienen su app funcionando.</span>
         </h2>
         <p className="mx-auto mb-14 max-w-2xl text-center text-lg text-muted-foreground">
-          Emprendedores reales de Latinoamérica usando Lovable con nuestro taller
+          Emprendedores reales de LATAM que usaron nuestro sistema para lanzar
         </p>
       </AnimatedSection>
 
@@ -138,18 +138,6 @@ const TestimonialsSection = () => (
         ))}
       </div>
 
-      <AnimatedSection delay={0.5}>
-        <div className="mt-10 text-center">
-          <a
-            href="https://madewithlovable.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block rounded-lg border border-primary/50 px-6 py-3 font-semibold text-primary transition-all hover:bg-primary/10"
-          >
-            Ver más proyectos de la comunidad →
-          </a>
-        </div>
-      </AnimatedSection>
     </div>
   </section>
 );

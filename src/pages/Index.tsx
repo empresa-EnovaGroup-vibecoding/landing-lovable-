@@ -1,11 +1,12 @@
 import HeroSection from "@/components/landing/HeroSection";
-import StatsSection from "@/components/landing/StatsSection";
+
 import ProblemSection from "@/components/landing/ProblemSection";
 import SolutionSection from "@/components/landing/SolutionSection";
-import PackSection from "@/components/landing/PackSection";
-import ComparisonTable from "@/components/landing/ComparisonTable";
+import PromptsSection from "@/components/landing/PromptsSection";
 import TestimonialsSection from "@/components/landing/TestimonialsSection";
 import HowItWorks from "@/components/landing/HowItWorks";
+import PackSection from "@/components/landing/PackSection";
+import NexusVsOthersTable from "@/components/landing/NexusVsOthersTable";
 import FAQSection from "@/components/landing/FAQSection";
 import CTASection from "@/components/landing/CTASection";
 import Footer from "@/components/landing/Footer";
@@ -14,16 +15,26 @@ import WhatsAppButton from "@/components/landing/WhatsAppButton";
 const Index = () => {
   return (
     <main className="min-h-screen bg-background text-foreground">
+      {/* E5: EXCITE */}
       <HeroSection />
-      <StatsSection />
+
+      {/* E5: EDUCATE */}
       <ProblemSection />
       <SolutionSection />
-      <PackSection />
-      <ComparisonTable />
+
+      {/* E5: ENGAGE */}
+      <PromptsSection />
       <TestimonialsSection />
+
+      {/* E5: EXPLAIN */}
       <HowItWorks />
+      <PackSection />
+      <NexusVsOthersTable />
+
+      {/* E5: EXECUTE */}
       <FAQSection />
       <CTASection />
+
       <Footer />
       <WhatsAppButton />
     </main>
