@@ -1,7 +1,6 @@
 import HeroSection from "@/components/landing/HeroSection";
 
 import ProblemSection from "@/components/landing/ProblemSection";
-import SolutionSection from "@/components/landing/SolutionSection";
 import PromptsSection from "@/components/landing/PromptsSection";
 import TestimonialsSection from "@/components/landing/TestimonialsSection";
 import HowItWorks from "@/components/landing/HowItWorks";
@@ -20,7 +19,6 @@ const Index = () => {
 
       {/* E5: EDUCATE */}
       <ProblemSection />
-      <SolutionSection />
 
       {/* E5: ENGAGE */}
       <PromptsSection />

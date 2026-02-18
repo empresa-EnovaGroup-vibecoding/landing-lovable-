@@ -3,11 +3,6 @@ import AnimatedSection from "./AnimatedSection";
 
 const models = [
   {
-    label: "Landing page profesional",
-    time: "5 min",
-    description: "Página de ventas con hero, beneficios, testimonios y formulario de contacto",
-  },
-  {
     label: "Sistema de inventario",
     time: "15 min",
     description: "Control de stock con entradas, salidas, alertas de nivel bajo y reportes",

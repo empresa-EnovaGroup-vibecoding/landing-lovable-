@@ -1,28 +1,7 @@
-import { useState } from "react";
-import { z } from "zod";
 import AnimatedSection from "./AnimatedSection";
 
 const WA_LINK =
   "https://wa.me/584264399792?text=Hola%20quiero%20mi%20acceso%20al%20Sistema%20Lanza%20Tu%20App";
-
-const formSchema = z.object({
-  name: z
-    .string()
-    .trim()
-    .min(1, "El nombre es requerido")
-    .max(100, "Máximo 100 caracteres"),
-  email: z
-    .string()
-    .trim()
-    .email("Email inválido")
-    .max(255, "Máximo 255 caracteres"),
-  phone: z
-    .string()
-    .trim()
-    .min(1, "El teléfono es requerido")
-    .max(20, "Máximo 20 caracteres")
-    .regex(/^[+\d\s()-]+$/, "Formato de teléfono inválido"),
-});
 
 interface ValueItem {
   label: string;
@@ -36,33 +15,7 @@ const VALUE_ITEMS: ValueItem[] = [
   { label: "Estrategias de monetización", value: "$20 USD" },
 ];
 
-const INPUT_CLASS =
-  "w-full rounded-lg border border-border bg-muted/50 px-4 py-3 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary backdrop-blur-sm";
-
 const CTASection = () => {
-  const [formData, setFormData] = useState({ name: "", email: "", phone: "" });
-  const [errors, setErrors] = useState<Record<string, string>>({});
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const result = formSchema.safeParse(formData);
-    if (!result.success) {
-      const fieldErrors: Record<string, string> = {};
-      result.error.errors.forEach((err) => {
-        if (err.path[0]) fieldErrors[err.path[0] as string] = err.message;
-      });
-      setErrors(fieldErrors);
-      return;
-    }
-    setErrors({});
-    window.open(WA_LINK, "_blank");
-  };
-
-  const updateField = (field: keyof typeof formData) => (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData((prev) => ({ ...prev, [field]: e.target.value }));
-    setErrors((prev) => ({ ...prev, [field]: "" }));
-  };
-
   return (
     <section className="relative overflow-hidden py-20 md:py-28">
       {/* Background glows */}
@@ -161,83 +114,16 @@ const CTASection = () => {
           </span>
         </AnimatedSection>
 
-        {/* 5. LEAD CAPTURE FORM */}
+        {/* 5. CTA BUTTON */}
         <AnimatedSection delay={0.25}>
-          <div className="relative mx-auto mb-6 max-w-md rounded-2xl glass-card-strong p-8 shadow-2xl">
-            <div
-              className="absolute -inset-px rounded-2xl opacity-50"
-              style={{
-                background:
-                  "linear-gradient(135deg, rgba(255,107,53,0.2), rgba(255,166,43,0.2))",
-              }}
-            />
-            <form onSubmit={handleSubmit} className="relative space-y-4">
-              <h3 className="mb-1 text-center text-xl font-bold">
-                Empieza ahora
-              </h3>
-              <p className="mb-5 text-center text-sm text-muted-foreground">
-                Completa tus datos y recibe acceso inmediato
-              </p>
-
-              <div>
-                <input
-                  type="text"
-                  placeholder="Tu nombre"
-                  maxLength={100}
-                  value={formData.name}
-                  onChange={updateField("name")}
-                  aria-label="Nombre completo"
-                  className={INPUT_CLASS}
-                />
-                {errors.name && (
-                  <p className="mt-1 text-xs text-destructive" role="alert">
-                    {errors.name}
-                  </p>
-                )}
-              </div>
-
-              <div>
-                <input
-                  type="email"
-                  placeholder="tu@email.com"
-                  maxLength={255}
-                  value={formData.email}
-                  onChange={updateField("email")}
-                  aria-label="Correo electrónico"
-                  className={INPUT_CLASS}
-                />
-                {errors.email && (
-                  <p className="mt-1 text-xs text-destructive" role="alert">
-                    {errors.email}
-                  </p>
-                )}
-              </div>
-
-              <div>
-                <input
-                  type="tel"
-                  placeholder="+52 / +57 / +593"
-                  maxLength={20}
-                  value={formData.phone}
-                  onChange={updateField("phone")}
-                  aria-label="Teléfono o WhatsApp"
-                  className={INPUT_CLASS}
-                />
-                {errors.phone && (
-                  <p className="mt-1 text-xs text-destructive" role="alert">
-                    {errors.phone}
-                  </p>
-                )}
-              </div>
-
-              <button
-                type="submit"
-                className="w-full rounded-lg cta-button py-3.5 text-base animate-pulse-glow"
-              >
-                QUIERO EMPEZAR AHORA →
-              </button>
-            </form>
-          </div>
+          <a
+            href={WA_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mx-auto mb-6 block w-full max-w-md rounded-lg cta-button py-4 text-center text-lg font-bold animate-pulse-glow"
+          >
+            QUIERO EMPEZAR AHORA →
+          </a>
         </AnimatedSection>
 
         {/* 6. GUARANTEE */}
