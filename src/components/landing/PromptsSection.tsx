@@ -8,11 +8,6 @@ const models = [
     description: "Control de stock con entradas, salidas, alertas de nivel bajo y reportes",
   },
   {
-    label: "Tienda online completa",
-    time: "20 min",
-    description: "E-commerce con catálogo, carrito de compras, checkout y gestión de pedidos",
-  },
-  {
     label: "Sistema de agendamiento",
     time: "15 min",
     description: "Calendario, pagos automáticos y recordatorios para salones y servicios",
