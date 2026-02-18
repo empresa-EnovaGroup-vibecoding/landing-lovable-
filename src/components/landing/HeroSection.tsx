@@ -81,14 +81,7 @@ const HeroSection = () => {
           <AnimatedSection delay={0.15}>
             <p className="mb-4 max-w-xl text-lg text-muted-foreground md:text-xl">
               Te damos{" "}
-              <span
-                className="font-semibold"
-                style={{
-                  background: "linear-gradient(135deg, #FF751A, #E8306E, #9D26D9)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}
-              >
+              <span className="font-semibold text-foreground">
                 modelos validados + Lovable Pro (200 créditos) + taller paso a paso
               </span>{" "}
               para que lances en días, no en meses.
