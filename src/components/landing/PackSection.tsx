@@ -1,5 +1,7 @@
 import { Rocket, GraduationCap, Check } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
+import pruebaLovableImg from "@/assets/prueba-lovable.png";
+import lovableTallerImg from "@/assets/lovable-taller.png";
 
 const toolFeatures = [
   "300 créditos Pro (el triple del plan oficial de $25 USD)",
@@ -41,7 +43,7 @@ const PackSection = () => (
             {/* Visual header — tool image */}
             <div className="relative h-44 overflow-hidden">
               <img
-                src="https://res.cloudinary.com/dpmt0pzhb/image/upload/v1770431323/Prueba_Lovable_fxblik.png"
+                src={pruebaLovableImg}
                 alt="Vista previa de Lovable Pro"
                 className="h-full w-full object-cover"
               />
@@ -80,7 +82,7 @@ const PackSection = () => (
             {/* Visual header — workshop image */}
             <div className="relative h-44 overflow-hidden">
               <img
-                src="https://res.cloudinary.com/dpmt0pzhb/image/upload/v1770430928/lovable_q3ci4u.png"
+                src={lovableTallerImg}
                 alt="Vista previa del taller"
                 className="h-full w-full object-cover"
               />
