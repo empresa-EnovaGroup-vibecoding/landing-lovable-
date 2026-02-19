@@ -3,7 +3,7 @@ import AnimatedSection from "./AnimatedSection";
 
 const comparisonRows = [
   { feature: "Créditos Lovable Pro", nexus: true, others: true },
-  { feature: "Precio", nexus: "$5 USD", others: "$15 - $17 USD" },
+  { feature: "Precio", nexus: "$9 USD", others: "$15 - $17 USD" },
   { feature: "Taller paso a paso", nexus: true, others: false },
   { feature: "Modelos validados listos para usar", nexus: true, others: false },
   { feature: "Prompts exactos (no desperdicias créditos)", nexus: true, others: false },
@@ -63,7 +63,7 @@ const NexusVsOthersTable = () => (
                       Sistema Lanza Tu App
                     </span>
                     <span className="text-xs text-muted-foreground">
-                      $5 USD
+                      $9 USD
                     </span>
                   </div>
                 </th>

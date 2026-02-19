@@ -4,7 +4,7 @@ import AnimatedSection from "./AnimatedSection";
 const rows = [
   {
     feature: "Precio",
-    lovable: "$5 USD único",
+    lovable: "$9 USD único",
     adalo: "$45 USD/mes",
     wix: "$17 USD/mes",
     dev: "$500-1000 USD",

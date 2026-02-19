@@ -9,7 +9,7 @@ import AnimatedSection from "./AnimatedSection";
 const faqs = [
   {
     q: "¿Qué herramienta usan para crear las apps?",
-    a: "Usamos Lovable, una herramienta de IA que genera apps completas con solo describirle lo que quieres en español. Es como tener un programador que trabaja en segundos. Tú recibes acceso Pro con 200 créditos como parte del sistema.",
+    a: "Usamos Lovable, una herramienta de IA que genera apps completas con solo describirle lo que quieres en español. Es como tener un programador que trabaja en segundos. Tú recibes acceso Pro con 300 créditos como parte del sistema.",
   },
   {
     q: "¿Necesito saber programar?",
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "¿Es pago mensual?",
-    a: "No. Es pago único de $5 USD. Recibes la herramienta pro, el taller completo, los modelos validados y las estrategias de monetización. Todo lo que crees es tuyo para siempre.",
+    a: "No. Es pago único de $9 USD. Recibes la herramienta pro, el taller completo, los modelos validados y las estrategias de monetización. Todo lo que crees es tuyo para siempre.",
   },
   {
     q: "¿Cómo sé que no es estafa?",

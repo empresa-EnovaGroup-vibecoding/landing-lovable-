@@ -12,7 +12,7 @@ const pillars = [
   {
     icon: Rocket,
     title: "Lovable Pro — Tu Herramienta",
-    subtitle: "Cuenta oficial · 200 créditos · 100% legal",
+    subtitle: "Cuenta oficial · 300 créditos · 100% legal",
     desc: "La herramienta de IA que genera apps completas con solo describirle lo que quieres. Tu código es tuyo para siempre — lo descargas, lo publicas y funciona sin pagar mensualidad.",
   },
   {

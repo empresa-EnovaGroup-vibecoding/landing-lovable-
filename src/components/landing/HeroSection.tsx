@@ -82,7 +82,7 @@ const HeroSection = () => {
             <p className="mb-4 max-w-xl text-lg text-muted-foreground md:text-xl">
               Te damos{" "}
               <span className="font-semibold text-foreground">
-                modelos validados + Lovable Pro (200 créditos) + taller paso a paso
+                modelos validados + Lovable Pro (300 créditos) + taller paso a paso
               </span>{" "}
               para que lances en días, no en meses.
             </p>
@@ -104,7 +104,7 @@ const HeroSection = () => {
               QUIERO EMPEZAR AHORA →
             </a>
             <p className="mt-3 text-sm text-muted-foreground">
-              Pago único $5 USD. Sin suscripción.
+              Pago único $9 USD. Sin suscripción.
             </p>
             <div className="mt-6 flex items-center justify-center gap-2 opacity-60">
               <span className="text-xs text-muted-foreground">Incluye herramienta oficial</span>

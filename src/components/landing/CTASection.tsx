@@ -9,7 +9,7 @@ interface ValueItem {
 }
 
 const VALUE_ITEMS: ValueItem[] = [
-  { label: "Herramienta Lovable Pro (200 créditos)", value: "$50 USD" },
+  { label: "Herramienta Lovable Pro (300 créditos)", value: "$50 USD" },
   { label: "Taller paso a paso (de la idea al cobro)", value: "$47 USD" },
   { label: "Modelos validados de sistemas", value: "$35 USD" },
   { label: "Estrategias de monetización", value: "$20 USD" },
@@ -79,7 +79,7 @@ const CTASection = () => {
                   Tú pagas hoy:
                 </span>
                 <span className="text-2xl font-extrabold gradient-text">
-                  $5 USD
+                  $9 USD
                 </span>
               </div>
             </div>
@@ -104,10 +104,10 @@ const CTASection = () => {
             $152 USD
           </p>
           <p className="mb-2 text-4xl font-extrabold md:text-5xl">
-            <span className="gradient-text">$5 USD</span>
+            <span className="gradient-text">$9 USD</span>
           </p>
           <p className="mb-3 text-base text-muted-foreground">
-            $100 MXN | $19.000 COP
+            $155 MXN | $33.000 COP
           </p>
           <span className="mb-10 inline-block rounded-full cta-button px-5 py-2 text-sm">
             PAGO ÚNICO

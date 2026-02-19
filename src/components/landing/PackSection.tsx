@@ -2,7 +2,7 @@ import { Rocket, GraduationCap, Check } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 const toolFeatures = [
-  "200 créditos Pro (el doble del plan oficial de $25 USD)",
+  "300 créditos Pro (el doble del plan oficial de $25 USD)",
   "+5 créditos diarios de regalo",
   "Más de 500 mensajes para crear",
   "Hosting incluido",
@@ -116,10 +116,10 @@ const PackSection = () => (
             $152 USD
           </p>
           <p className="mb-2 text-5xl font-extrabold md:text-6xl">
-            <span className="gradient-text">$5 USD</span>
+            <span className="gradient-text">$9 USD</span>
           </p>
           <p className="mb-4 text-lg text-muted-foreground">
-            $100 MXN | $19.000 COP
+            $155 MXN | $33.000 COP
           </p>
           <span className="mb-8 inline-block rounded-full cta-button px-5 py-2 text-sm">
             PAGO ÚNICO — No es suscripción
