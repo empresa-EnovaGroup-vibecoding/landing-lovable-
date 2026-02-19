@@ -1,7 +1,7 @@
 import AnimatedSection from "./AnimatedSection";
 
 const WA_LINK =
-  "https://wa.me/584264399792?text=Hola%20quiero%20mi%20acceso%20al%20Sistema%20Lanza%20Tu%20App";
+  "https://wa.me/584264399792?text=Hola%2C%20quiero%20comprar%20los%20300%20cr%C3%A9ditos%20de%20Lovable%20%2B%20el%20taller%20para%20dominar%20la%20herramienta";
 
 interface ValueItem {
   label: string;

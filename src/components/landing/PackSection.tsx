@@ -127,7 +127,7 @@ const PackSection = () => (
 
           <div className="mt-6">
             <a
-              href="https://wa.me/584264399792?text=Hola%20quiero%20pagar%20mi%20Lovable%20Pro"
+              href="https://wa.me/584264399792?text=Hola%2C%20quiero%20comprar%20los%20300%20cr%C3%A9ditos%20de%20Lovable%20%2B%20el%20taller%20para%20dominar%20la%20herramienta"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block rounded-lg cta-button px-8 py-4 text-lg"
