@@ -2,7 +2,7 @@ import { Rocket, GraduationCap, Check } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 const toolFeatures = [
-  "300 créditos Pro (el doble del plan oficial de $25 USD)",
+  "300 créditos Pro (el triple del plan oficial de $25 USD)",
   "+5 créditos diarios de regalo",
   "Más de 500 mensajes para crear",
   "Hosting incluido",
