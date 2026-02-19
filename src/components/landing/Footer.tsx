@@ -26,7 +26,7 @@ const Footer = () => (
         </div>
 
         <p className="text-sm text-muted-foreground">
-          © 2025 Nexus Digital. Todos los derechos reservados.
+          © 2026 Nexus Digital. Todos los derechos reservados.
         </p>
         <p className="text-xs text-muted-foreground/60">
           Lovable es una marca registrada de Lovable Inc. Nexus Digital es un distribuidor autorizado independiente.
